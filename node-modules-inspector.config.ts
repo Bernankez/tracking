@@ -16,7 +16,4 @@ export default defineConfig({
     "typescript",
     "eslint",
   ],
-  excludeDependenciesOf: [
-    "@typescript-eslint/utils",
-  ],
 });
