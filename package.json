@@ -1,0 +1,50 @@
+{
+  "name": "@bernankez/tracking",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.4.1",
+  "scripts": {
+    "dev": "node-modules-inspector",
+    "build": "node-modules-inspector build",
+    "lint": "eslint . -f mo",
+    "fix": "eslint . -f mo --fix",
+    "release": "bumpp && pnpm publish",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "@bernankez/eslint-config": "^3.0.0",
+    "@bernankez/git-sync": "^0.1.3",
+    "@bernankez/npm-open": "^0.0.3",
+    "@bernankez/prototype": "^0.0.5",
+    "@bernankez/theme": "^0.4.1",
+    "@bernankez/theme-generator": "^0.2.2",
+    "@bernankez/utils": "^0.6.4",
+    "@luyejiu/theme": "^0.2.1",
+    "@runinbrowser/theme": "^0.0.4",
+    "backmoji": "^0.1.1",
+    "create-l": "^2.5.0",
+    "vite-plugin-font-carrier": "^0.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "eslint": "^9.20.1",
+    "eslint-formatter-mo": "^2.3.0",
+    "lint-staged": "^15.4.3",
+    "node-modules-inspector": "^0.2.0",
+    "pnpm": "^10.4.1",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
