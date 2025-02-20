@@ -58,8 +58,8 @@ importers:
         specifier: ^15.4.3
         version: 15.4.3
       node-modules-inspector:
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
       pnpm:
         specifier: ^10.4.1
         version: 10.4.1
@@ -2266,12 +2266,12 @@ packages:
   node-mock-http@1.0.0:
     resolution: {integrity: sha512-0uGYQ1WQL1M5kKvGRXWQ3uZCHtLTO8hln3oBjIusM75WoesZ909uQJs/Hb946i2SS+Gsrhkaa6iAO17jRIv6DQ==}
 
-  node-modules-inspector@0.2.0:
-    resolution: {integrity: sha512-hSoLMm2XfeVeQJadqzYNhZtdDu4zUpbNeEy1umYK7k/IzMtuJ/RTxBX2zsECxWIuhC437tseTvfQZLIhHroRbg==}
+  node-modules-inspector@0.2.1:
+    resolution: {integrity: sha512-r3aXpJspyldKDN/RImfIQ8AwxYEQy52dr5/qIreuaqAH2jygFu+gPqDFNhkcOWF7Xkkn62uwOjkOJ7gUh+8ogA==}
     hasBin: true
 
-  node-modules-tools@0.2.0:
-    resolution: {integrity: sha512-RX27QWU58UvNOTTZWwtCixoBRxL2hfUxM+EWCVSb9LRWjtGxG0HFqD0hdx7RY9eREqoVu9Sc+z4Qk3RdDD3/aA==}
+  node-modules-tools@0.2.1:
+    resolution: {integrity: sha512-uwRlTzZC6wZh5a78n7O3lArXhuirdy5JSivmWsbXnRMBmfE6g3aKASv5uV15ldiYlosjGkch/yo1VK050kcXvA==}
 
   node-releases@2.0.19:
     resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
@@ -5722,7 +5722,7 @@ snapshots:
 
   node-mock-http@1.0.0: {}
 
-  node-modules-inspector@0.2.0:
+  node-modules-inspector@0.2.1:
     dependencies:
       birpc: 2.2.0
       cac: 6.7.14
@@ -5735,7 +5735,8 @@ snapshots:
       launch-editor: 2.10.0
       mlly: 1.7.4
       mrmime: 2.0.1
-      node-modules-tools: 0.2.0
+      node-modules-tools: 0.2.1
+      ohash: 1.1.4
       open: 10.1.0
       pathe: 2.0.3
       picocolors: 1.1.1
@@ -5766,7 +5767,7 @@ snapshots:
       - uploadthing
       - utf-8-validate
 
-  node-modules-tools@0.2.0:
+  node-modules-tools@0.2.1:
     dependencies:
       p-limit: 6.2.0
       package-manager-detector: 0.2.9
